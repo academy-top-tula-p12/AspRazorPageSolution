@@ -1,0 +1,64 @@
+﻿@page
+@using AspRPWelcomeApp.Types
+@model IndexModel
+
+@{
+    int id = 20;
+    string name = "Bobby";
+
+    Person person = new() { Name = "Bobby", Age = 26 };
+}
+
+<h1>@Model.Title</h1>
+<h2>@Model.DateNow()</h2>
+
+<h3>@id @name</h3>
+<h3>@person.Name @person.Age</h3>
+
+@{
+    string header = "Header";
+
+    <text>@header</text>
+
+    int hour = DateTime.Now.Hour;
+    var day = DateTime.Now.DayOfWeek;
+}
+
+@functions
+{
+    public int GaussAmount(int number)
+    {
+        int result = 0;
+        for (int i = 1; i <= number; i++)
+            result += i;
+        return result;
+    }
+}
+
+<h3>@GaussAmount(1000)</h3>
+
+@if(hour > 22 && hour < 5)
+{
+    <h3>Night</h3>
+}
+else if(hour >= 5 && hour < 12)
+{
+    <h3>Morning</h3>
+}
+else
+{
+    <h3>Day</h3>
+}
+
+@switch(day)
+{
+    case DayOfWeek.Monday:
+        <h3>Monday</h3>
+        break;
+}
+
+
+
+
+
+
