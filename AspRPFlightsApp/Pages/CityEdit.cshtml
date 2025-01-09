@@ -1,0 +1,16 @@
+﻿@page "{id?}"
+@model AspRPFlightsApp.Pages.CityEditModel
+@{
+}
+
+<h2>Edit City</h2>
+<form method="post">
+    <input type="hidden" name="Id" value="@Model.City.Id" />
+    <div>
+        <label>Title:</label><br />
+        <input type="text" name="Title" value="@Model.City.Title" />
+    </div>
+    <div>
+        <input type="submit" value="Save City" />
+    </div>
+</form>

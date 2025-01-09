@@ -1,0 +1,10 @@
+﻿@page "{category:alpha?}/{id:int?}"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    //var pathId = RouteData.Values["id"];
+}
+
+<h2>Category = @Model.Category</h2>
+<h2>Id = @Model.Id</h2>
+@* <h2>Id = @pathId</h2> *@

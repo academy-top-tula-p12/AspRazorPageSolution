@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspRPWelcomeApp", "AspRPWelcomeApp\AspRPWelcomeApp.csproj", "{746C575E-BC41-44EA-AE8B-2888C0FB3BCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspRPAdvancedApp", "AspRPAdvancedApp\AspRPAdvancedApp.csproj", "{ACD6D289-8AC5-4EA6-9BBC-15C79240CBEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspRPFlightsApp", "AspRPFlightsApp\AspRPFlightsApp.csproj", "{1A7476C3-A13B-49FC-BD93-D05B7F60826B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{746C575E-BC41-44EA-AE8B-2888C0FB3BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{746C575E-BC41-44EA-AE8B-2888C0FB3BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{746C575E-BC41-44EA-AE8B-2888C0FB3BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACD6D289-8AC5-4EA6-9BBC-15C79240CBEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD6D289-8AC5-4EA6-9BBC-15C79240CBEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD6D289-8AC5-4EA6-9BBC-15C79240CBEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD6D289-8AC5-4EA6-9BBC-15C79240CBEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A7476C3-A13B-49FC-BD93-D05B7F60826B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A7476C3-A13B-49FC-BD93-D05B7F60826B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A7476C3-A13B-49FC-BD93-D05B7F60826B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A7476C3-A13B-49FC-BD93-D05B7F60826B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,34 @@
+﻿@page
+@using Models;
+@model AspRPFlightsApp.Pages.CityModel
+@{
+}
+
+<h2>Cities</h2>
+<div><a href="/CityCreate">Add City</a></div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(City city in Model.Cities)
+        {
+            <tr>
+                <td>@city.Title</td>
+                <td><a asp-page="CityEdit" asp-route-id="@city.Id">Edit</a></td>
+                <td>
+                    <form method="post">
+                        <button type="submit" asp-page-handler="delete" asp-route-id="@city.Id">
+                            Delete
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

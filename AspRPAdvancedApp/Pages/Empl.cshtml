@@ -1,0 +1,32 @@
+﻿@page "{handler?}"
+
+@model AspRPAdvancedApp.Pages.EmplModel
+@using Types;
+@{
+}
+
+<form method="post">
+    <label>Name: </label><br />
+    <input type="text" name="Name" /><br />
+    <label>Age: </label><br />
+    <input type="number" name="Age" /><br /><br />
+    <input type="submit" value="Send" />
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th><a href="/Empl/ByName">Name</a></th>
+            <th><a href="/Empl/ByAge">Age</a></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Employee employee in Model.EmployeesViews)
+        {
+            <tr>
+                <td>@employee.Name</td>
+                <td>@employee.Age</td>
+            </tr>
+        }
+    </tbody>
+</table>
